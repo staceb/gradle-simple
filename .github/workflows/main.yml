@@ -17,5 +17,5 @@ jobs:
         java-version: 1.8
     - name: Build and publish (GitHub)
       env:
-        GITHUB_TOKEN: ${{ GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: ./gradlew publish
